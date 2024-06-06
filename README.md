@@ -2,6 +2,7 @@
 This repository houses and documents the codes used for all statistical analyses in our recent published manuscript: Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial [INSERT CITATION INFO][DOI]
 
 
+
 # Authors
 Kai-Feng Pan†\*, M.D., Ph.D., Wen-Qing Li†\*, Ph.D., Lian Zhang, M.D., Wei-Dong Liu, M.D., Jun-Ling Ma, M.D., Yang Zhang, M.D., Ph.D., Kurt Ulm, Ph.D., Jian-Xi Wang, M.D., Lei Zhang, Ph.D., Monther Bajbouj, M.D., Lan-Fu Zhang, B.S., Ming Li, B.S., Michael Vieth, M.D., Michael Quante, M.D., Ph.D., Le-Hua Wang, M.D., Stepan Suchanek, M.D., Raquel Mejías-Luque, Ph.D., Heng-Min Xu, Ph.D. candidate, Xiao-Han Fan, Ph.D., Xuan Han, B.S., Zong-Chao Liu, M.S., Tong Zhou, B.S., Wei-Xiang Guan, B.S., Roland M. Schmid, M.D., Markus Gerhard*, M.D., Ph.D., Meinhard Classen, M.D., and Wei-Cheng You*, M.D.
 
@@ -33,6 +34,6 @@ A large community-based mass trial is highly needed to determine the full spectr
 
 
 # Description of scripts
-- ext_data/: scripts for extended data
-- main/: scripts for main results
-- sup/: scripts for supplementary materials
+- /ext_data/: scripts for extended data
+- /main/: scripts for main results
+- /sup/: scripts for supplementary materials
