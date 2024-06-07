@@ -1,4 +1,4 @@
-![image](https://github.com/PUCI-EPI/GC_PREV_HP_CRT/assets/171912045/939fc9d8-6e08-490d-ae67-26835a186f1c)# Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial
+# Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial
 This repository houses and documents the codes used for all statistical analyses in our recent published manuscript: Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial [INSERT CITATION INFO][DOI]
 
 
