@@ -12,7 +12,7 @@ Kai-Feng Pan,†\*, M.D., Ph.D., Wen-Qing Li,†\*, Ph.D., Lian Zhang, M.D., Wei
 - ‡Deceased authors
 
 
-# Author Affiliations: 
+# Affiliations: 
 - State Key Laboratory of Holistic Integrative Management of Gastrointestinal Cancers, Beijing Key Laboratory of Carcinogenesis and Translational Research, Department of Cancer Epidemiology, Peking University Cancer Hospital & Institute (K.-F.P, W.-Q.L., H.-M.X., X.-H.F., X.H., Z.-C.L.);
 - Key Laboratory of Carcinogenesis and Translational Research (Ministry of Education), Department of Cancer Epidemiology, Peking University Cancer Hospital & Institute (L.Z., J.-L.M., Y.Z., L.Z., T.Z., W.-X.G.,W.-C.Y.);
 - Health Bureau of Linqu County (W.-D.L., J.-X.W., L.-F.Z., M.L., L.-H.W.) —all in China;
