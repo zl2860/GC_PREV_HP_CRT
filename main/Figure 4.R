@@ -15,7 +15,7 @@ library(officer)
 library(readxl)
 
 # get the data
-dat_figure4<-fread("E:/PKUerrrrrr/7LT/large trial/Figure4.csv",header=T)
+dat_figure4<-fread("E:/mylaptop/7LT/large trial/Figure4.csv",header=T)
 
 # plot
 ## successful
