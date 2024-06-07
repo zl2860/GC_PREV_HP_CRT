@@ -51,7 +51,7 @@ my_vec_graph <- rvg::dml(code = print(p1, newpage = FALSE))
 doc <- read_pptx()
 doc <- add_slide(doc, layout = "Title and Content", master = "Office Theme")
 doc <- ph_with(doc, my_vec_graph, location = ph_location_fullsize() )
-print(doc, target = "Figure3_incidence.pptx",width=5)
+print(doc, target = "Figure4_incidence.pptx",width=5)
 
 ### mortality
 # run
@@ -68,7 +68,7 @@ my_vec_graph <- rvg::dml(code = print(p1, newpage = FALSE))
 doc <- read_pptx()
 doc <- add_slide(doc, layout = "Title and Content", master = "Office Theme")
 doc <- ph_with(doc, my_vec_graph, location = ph_location_fullsize() )
-print(doc, target = "Figure3_mortality.pptx")
+print(doc, target = "Figure4_mortality.pptx")
 
 ##HR
 dff<-df1 %>% filter(A5B5C!='Group C')
