@@ -20,33 +20,6 @@ dat<-fread("E:/mylaptop/0myproject/my project/large_trial_analysis.csv",header=T
 
 dat$A5B5C<- factor(dat$A5B5C,levels = c(0,1,2),labels = c('Group B','Group A','Group C'))
 
-## TNM
-### T
-dat$TNM_T<-ifelse(dat$T =='0',0,
-                  ifelse(dat$T == '1' | dat$T == '1a' | dat$T == '1b' | dat$T == 'T1' ,1,ifelse(dat$T == '2' | dat$T == 'T2',2,ifelse(dat$T == 3,3,ifelse(dat$T == '4' | dat$T == '4a' | dat$T == '4b',4,ifelse(dat$T == 'is',5,ifelse(dat$T == 'x',6,99)))))))
-
-dat$TNM_T<-factor(dat$TNM_T,levels = c(0,1,2,3,4,5,6,99),
-                  labels = c('T0','T1','T2','T3','T4','Tis','Tx','Unknown'))
-### N
-dat$TNM_N<-ifelse(dat$N =='0'|dat$N == 'N0',0,
-                  ifelse(dat$N == '1' | dat$N == 'N1',1,
-                         ifelse(dat$N == '2' ,2,
-                                ifelse(dat$N == 3| dat$N == '3a' | dat$N == '3b' |dat$N == 'N3',3,
-                                       ifelse(dat$N == 'x',4,99)))))
-dat$TNM_N<-factor(dat$TNM_N,levels = c(0,1,2,3,4,99),
-                  labels = c('N0','N1','N2','N3','Nx','Unknown'))
-
-### M
-dat$TNM_M<-ifelse(dat$M== '0' | dat$M== 'M0',0,
-                  ifelse(dat$M=='1',1,
-                         ifelse(dat$M== 'x' | dat$M=='X',2,99))
-)
-dat$TNM_M<-factor(dat$TNM_M,levels = c(0,1,2,99),
-                  labels = c('M0','M1','Mx','Unknown'))
-
-dff<-dat%>% filter(dat$Y_GC_20221231==1)
-
-
 # creat extended table 3 
 ## Pathology
 dff<-dat%>% filter(dat$Y_GC_20221231==1)
@@ -82,34 +55,7 @@ write.csv(tabexp,file = 'TNM-2.csv')
 ### cTNM 
 ### prepare data
 data.cTNM = fread('./data/TNM/large_trial_analysis_20240309.CSV', data.table = F) %>% dplyr::select(A5B5C, Y_GC_20221231, T, N, M) %>% filter(Y_GC_20221231 == 1) %>%
-  filter(!is.na(A5B5C)) %>%
-  mutate(T = recode(T, 
-                    "1" = "T1",
-                    "1a" = "T1", 
-                    "1b" = "T1",
-                    "T1" = "T1",
-                    "T2" = "T2",
-                    "x" = "Tx",
-                    "2" = "T2",
-                    "is"="Tis",
-                    "3"="T3",
-                    "4"="T4",
-                    "0"="T0",
-                    "4a" = "T4a",
-                    "4b" = "T4b"),
-         N = recode(N,
-                    "1" = "N1",
-                    "3a" = "N3",
-                    "2" = "N2",
-                    "3b" = "N3",
-                    "0" = "N0",
-                    "N0" = "N0",
-                    "3" = "N3",
-                    "x" = "Nx"),
-         M = recode(M,
-                    "1" = "M1",
-                    "0" = "M0",
-                    "X" = "Mx"))
+  filter(!is.na(A5B5C))
 
 unique(data.cTNM$T) 
 unique(data.cTNM$N) 
@@ -165,34 +111,7 @@ table(data.cTNM$A5B5C)
 
 ### pTNM
 data.pTNM<-fread('./data/TNM/large_trial_analysis_20240309.CSV', data.table = F) %>% dplyr::select(A5B5C, Y_GC_20221231, T, N, M) %>% filter(Y_GC_20221231 == 1) %>%
-  filter(!is.na(A5B5C)) %>%
-  mutate(T = recode(T, 
-                    "1" = "T1",
-                    "1a" = "T1", 
-                    "1b" = "T1",
-                    "T1" = "T1",
-                    "T2" = "T2",
-                    "x" = "Tx",
-                    "2" = "T2",
-                    "is"="Tis",
-                    "3"="T3",
-                    "4"="T4",
-                    "0"="T0",
-                    "4a" = "T4a",
-                    "4b" = "T4b"),
-         N = recode(N,
-                    "1" = "N1",
-                    "3a" = "N3a",
-                    "2" = "N2",
-                    "3b" = "N3b",
-                    "0" = "N0",
-                    "N0" = "N0",
-                    "3" = "N3",
-                    "x" = "Nx"),
-         M = recode(M,
-                    "1" = "M1",
-                    "0" = "M0",
-                    "X" = "Mx"))
+  filter(!is.na(A5B5C)) 
 
 unique(data.pTNM$T) 
 unique(data.pTNM$N) 
