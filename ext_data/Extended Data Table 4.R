@@ -20,7 +20,7 @@ dat<-fread("E:/mylaptop/0myproject/my project/large_trial_analysis.csv",header=T
 
 
 # go through the models
-## incidecen
+## incidence
 attach(dat)
 ### noncardia
 table(dat$A5B5C,dat$Y_noncardia_GC_20221231)
