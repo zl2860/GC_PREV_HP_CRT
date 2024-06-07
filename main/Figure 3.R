@@ -15,11 +15,11 @@ library(officer)
 library(readxl)
 
 # get the data
-dat_figure4<-fread("E:/mylaptop/7LT/large trial/Figure4.csv",header=T)
+dat_figure3<-fread("E:/mylaptop/7LT/large trial/Figure3.csv",header=T)
 
 # plot
 ## successful
-dff<-dat_figure4 %>% filter( C1 =='successful')
+dff<-dat_figure3 %>% filter( C1 =='successful')
 attach(dff)
 p1<- forestplot( 
   labeltext=as.matrix(dff[,c(2,3)]),
@@ -47,10 +47,10 @@ p1<- forestplot(
   
 )
 
-topptx(p1,"F4_successful.pptx",height=7,width=6)
+topptx(p1,"F3_successful.pptx",height=7,width=6)
 
 ## Failed
-dff<-dat_figure4 %>% filter(C1=='failed')
+dff<-dat_figure3 %>% filter(C1=='failed')
 attach(dff)
 p1<- forestplot( 
   labeltext=as.matrix(dff[,c(2,3)]),
@@ -78,10 +78,10 @@ p1<- forestplot(
   
 )
 
-topptx(p1,"F4_fail.pptx",height=7,width=6)
+topptx(p1,"F43fail.pptx",height=7,width=6)
 
 ### H. pylori negative
-dff<-dat_figure4 %>% filter(C1=='Group C')
+dff<-dat_figure3 %>% filter(C1=='Group C')
 attach(dff)
 p1<- forestplot( 
   labeltext=as.matrix(dff[,c(2,3)]),
@@ -109,4 +109,4 @@ p1<- forestplot(
   
 )
 
-topptx(p1,"F4_groupC.pptx",height=7,width=6)
+topptx(p1,"F3_groupC.pptx",height=7,width=6)
