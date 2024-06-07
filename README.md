@@ -4,10 +4,13 @@ This repository houses and documents the codes used for all statistical analyses
 
 
 # Authors
-Kai-Feng Pan†\*, M.D., Ph.D., Wen-Qing Li†\*, Ph.D., Lian Zhang, M.D., Wei-Dong Liu, M.D., Jun-Ling Ma, M.D., Yang Zhang, M.D., Ph.D., Kurt Ulm, Ph.D., Jian-Xi Wang, M.D., Lei Zhang, Ph.D., Monther Bajbouj, M.D., Lan-Fu Zhang, B.S., Ming Li, B.S., Michael Vieth, M.D., Michael Quante, M.D., Ph.D., Le-Hua Wang, M.D., Stepan Suchanek, M.D., Raquel Mejías-Luque, Ph.D., Heng-Min Xu, Ph.D. candidate, Xiao-Han Fan, Ph.D., Xuan Han, B.S., Zong-Chao Liu, M.S., Tong Zhou, B.S., Wei-Xiang Guan, B.S., Roland M. Schmid, M.D., Markus Gerhard*, M.D., Ph.D., Meinhard Classen, M.D., and Wei-Cheng You*, M.D.
+Kai-Feng Pan,†\*, M.D., Ph.D., Wen-Qing Li,†\*, Ph.D., Lian Zhang, M.D., Wei-Dong Liu, M.D., Jun-Ling Ma, M.D., Yang Zhang, M.D., Ph.D., Kurt Ulm, Ph.D., Jian-Xi Wang, M.D., Lei Zhang, Ph.D., Monther Bajbouj,‡, M.D., Lan-Fu Zhang, B.S., Ming Li, B.S., Michael Vieth, M.D., Michael Quante, M.D., Ph.D., Le-Hua Wang, M.D., Stepan Suchanek, M.D., Raquel Mejías-Luque, Ph.D., Heng-Min Xu, Ph.D., Xiao-Han Fan, Ph.D., Xuan Han, B.S., Zong-Chao Liu, M.S., Tong Zhou, B.S., Wei-Xiang Guan, B.S., Roland M. Schmid, M.D., Markus Gerhard*, M.D., Ph.D., Meinhard Classen‡, M.D., and Wei-Cheng You*, M.D.
+
 
 - †Drs. Kai-Feng Pan and Wen-Qing Li contributed equally to this work.  
 - \* These authors contributing equally as senior authors and co-corresponding authors. 
+- ‡Deceased authors
+
 
 # Author Affiliations: 
 - State Key Laboratory of Holistic Integrative Management of Gastrointestinal Cancers, Beijing Key Laboratory of Carcinogenesis and Translational Research, Department of Cancer Epidemiology, Peking University Cancer Hospital & Institute (K.-F.P, W.-Q.L., H.-M.X., X.-H.F., X.H., Z.-C.L.);
@@ -37,3 +40,7 @@ A large community-based mass trial is highly needed to determine the full spectr
 - /ext_data/: scripts for extended data
 - /main/: scripts for main results
 - /sup/: scripts for supplementary materials
+
+Note: Group A represents H.pylori treatment group; Group B represents the symptom alleviation treatment group with single dosage of omeprazole and bismuth citrate; Group C represents the H.pylori negative group.
+
+
