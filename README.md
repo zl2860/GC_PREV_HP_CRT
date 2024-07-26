@@ -1,7 +1,7 @@
 # Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial
 This repository houses and documents the codes used for all statistical analyses in our recent published manuscript: Gastric cancer prevention by community eradication of Helicobacter pylori: a cluster-randomized trial 
 
-[INSERT CITATION INFO][DOI]
+[INSERT CITATION INFO][DOI: 10.1038/s41591-024-03153-w]
 
 
 
